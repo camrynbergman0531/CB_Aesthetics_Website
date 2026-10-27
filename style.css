@@ -1,0 +1,320 @@
+
+/* CB Aesthetics Website Styles */
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF1F0;
+    color: #663300;
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #FFF1F0;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #663300;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #B58370;
+}
+
+/* Homepage Banner */
+.hero {
+    background-image:
+    linear-gradient(
+        rgba(255, 241, 240, 0.55),
+        rgba(255, 241, 240, 0.55)
+    ),
+    url("images/banner.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+    padding: 90px 20px;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-family: Garamond, Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.hero hr {
+    width: 200px;
+    border: none;
+    border-top: 1px solid #663300;
+    margin: 30px auto;
+}
+
+/* Services Section */
+.services-preview {
+    padding: 40px 20px 60px;
+}
+
+.services-preview h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #E7D0B9;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h3 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* Footer */
+footer {
+    background-color: #E7D0B9;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Responsive Layout for Phones */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .service-container {
+        gap: 25px;
+    }
+
+    .service {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* SERVICES PAGE STYLING */
+
+.services-hero {
+    background-color: #E7D0B9;
+    padding: 60px 20px;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 12px;
+}
+
+.services-hero h1 {
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.services-hero hr {
+    width: 150px;
+    border: none;
+    border-top: 1px solid #663300;
+    margin: 25px auto;
+}
+
+.services-hero p {
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Service Categories */
+
+.services-page {
+    padding: 50px 5%;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #E7D0B9;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1 1 250px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Pricing Section */
+
+.pricing-section {
+    padding: 40px 20px 70px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.pricing-section h2 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.pricing-section p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #FFF1F0;
+    text-align: left;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 18px 15px;
+    border: none;
+}
+
+.pricing-table th {
+    background-color: #E7D0B9;
+    font-size: 14px;
+}
+
+.pricing-table td {
+    font-size: 13px;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #F8E4DF;
+}
+
+.pricing-table th:last-child,
+.pricing-table td:last-child {
+    text-align: right;
+}
+
+.pricing-note {
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+/* Responsive Services Page */
+
+@media (max-width: 768px) {
+
+    .services-hero {
+        padding: 45px 15px;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+        flex: none;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+}
